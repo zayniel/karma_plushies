@@ -64,9 +64,9 @@ export default function Home() {
       <Box boxShadow='lg' bgColor='whiteAlpha.800' h='130px' w='full'>
         <SimpleGrid columns={2}>
           <HStack>
-          <Avatar mx='20px' mt={{ base: '16px', md: '6px', lg: '6px' }} size='xl' name='Karma' src='./pfp.jpg'></Avatar>
+          <Avatar mx={{ sm: '25px', md: '20px', lg: '20px'}} mt={{ base: '30px', md: '6px', lg: '6px' }} size={{ base: 'lg', md: 'xl', lg: 'xl' }} name='Karma' src='./pfp.jpg'></Avatar>
           <Box w={{ base:'200px', md: '300px', lg: '400px'}}>
-            <Text fontSize={{ base:'30px', md: '38px', lg: '38px' }} mt={{ base: '20px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
+            <Text fontSize={{ base:'24px', md: '38px', lg: '38px' }} mt={{ base: '30px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
           </Box>
           </HStack>
         </SimpleGrid>
