@@ -62,7 +62,7 @@ export default function Home() {
         <SimpleGrid columns={2}>
           <HStack>
           <Avatar mx='20px' mt={{ base: '16px', md: '6px', lg: '6px' }} size='xl' name='Karma' src='./pfp.jpg'></Avatar>
-          <Box w={{ base:'300px', md: '300px', lg: '400px'}}>
+          <Box w={{ base:'200px', md: '300px', lg: '400px'}}>
             <Text fontSize={{ base:'30px', md: '38px', lg: '38px' }} mt={{ base: '20px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
           </Box>
           </HStack>
@@ -78,7 +78,7 @@ export default function Home() {
     </div>
 
     <div className='grid-container'>
-      <SimpleGrid py='50px' px='100px' spacing='40px' minChildWidth='300px'>
+      <SimpleGrid py='50px' px='50px' spacing='40px' minChildWidth='300px'>
           
           <Box>
           <Card
