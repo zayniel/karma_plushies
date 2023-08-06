@@ -98,7 +98,7 @@ export default function Home() {
     <EmailForm></EmailForm>
 
     <div className='title'>
-      <Text color='#202224' fontFamily='Palm' fontSize='26px' mt='40px'>Featured Plushies</Text>
+      <Text color='#202224' fontFamily='Palm' fontSize={{ base: '22px', md: '26px', lg: '26px'}} mt='40px'>Featured Plushies</Text>
     </div>
 
     <div className='grid-container'>
