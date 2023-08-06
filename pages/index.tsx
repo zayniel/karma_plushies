@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import * as React from 'react'
 import Layout from '../components/Layout'
+import EmailForm from '../components/EmailForm'
 import {
   ChakraProvider,
   extendTheme,
@@ -17,9 +18,10 @@ import {
   Image,
   CardHeader,
   CardBody,
-  IconButton,
+  Heading,
 
 } from '@chakra-ui/react'
+
 
 const theme = extendTheme ({
   styles: {
@@ -36,7 +38,7 @@ const theme = extendTheme ({
           fontFamily: 'Palm'
         },
         'heading': {
-          fontFamily: 'Palm'
+          
         }
       }
     }
@@ -57,18 +59,26 @@ export default function Home() {
     
     <div className='title'>
       <Box boxShadow='lg' bgColor='whiteAlpha.800' h='130px' w='full'>
-        <SimpleGrid columns={3}>
-          <Avatar ml='5' mt='4' size='xl' name='Karma' src='./pfp.jpg'></Avatar>
-          <Box w={{ base:'300px', md: '400px', lg: '630px'}}>
-            <Text fontSize={{ base: '30px', md: '40px', lg: '50px' }} mt={{ base: '5', md: '6', lg:'6' }} variant='title' color='black'>Karma Plushies</Text>
+        <SimpleGrid columns={2}>
+          <HStack>
+          <Avatar mx='20px' mt='6px' size='xl' name='Karma' src='./pfp.jpg'></Avatar>
+          <Box w={{ base:'300px', md: '300px', lg: '400px'}}>
+            <Text fontSize='38px' mt='6px' variant='title' color='#202224'>Karma Plushies</Text>
           </Box>
+          </HStack>
           
         </SimpleGrid>
       </Box>
     </div>
 
+    <EmailForm></EmailForm>
+
+    <div className='title'>
+      <Text color='#202224' fontFamily='Palm' fontSize='26px' mt='40px'>Featured Plushies</Text>
+    </div>
+
     <div className='grid-container'>
-      <SimpleGrid pt='50px' px='100px' spacing='40px' minChildWidth='300px'>
+      <SimpleGrid py='50px' px='100px' spacing='40px' minChildWidth='300px'>
           
           <Box>
           <Card
@@ -83,7 +93,7 @@ export default function Home() {
             />
             </CardHeader>
             <CardBody>
-              <Text fontSize='xl' variant='heading'>Frederick the Frog</Text>
+              <Heading fontSize='2xl'>Frederick the Frog</Heading>
             </CardBody>
           </Card>
           </Box>
@@ -101,7 +111,7 @@ export default function Home() {
               />
               </CardHeader>
               <CardBody>
-                <Text fontSize='xl' variant='heading'>Karma the Kitty</Text>
+                <Heading fontSize='2xl'>Karma the Kitty</Heading>
               </CardBody>
             </Card>
           </Box>
@@ -119,7 +129,7 @@ export default function Home() {
               />
               </CardHeader>
               <CardBody>
-                <Text fontSize='xl' variant='heading'>Cosmo the Cat</Text>
+                <Heading fontSize='2xl'>Cosmo the Cat</Heading>
               </CardBody>
             </Card>
           </Box>
@@ -137,7 +147,7 @@ export default function Home() {
               />
               </CardHeader>
               <CardBody>
-                <Text fontSize='xl' variant='heading'>Leo the Laying Cat</Text>
+                <Heading fontSize='2xl'>Leo the Laying Cat</Heading>
               </CardBody>
             </Card>
           </Box>
