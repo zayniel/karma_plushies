@@ -2,6 +2,7 @@ import Head from 'next/head';
 import * as React from 'react'
 import Layout from '../components/Layout'
 import EmailForm from '../components/EmailForm'
+import { BsCart2 } from 'react-icons/bs'
 import {
   ChakraProvider,
   extendTheme,
@@ -19,6 +20,8 @@ import {
   CardHeader,
   CardBody,
   Heading,
+  Tooltip,
+  IconButton,
 
 } from '@chakra-ui/react'
 
@@ -66,9 +69,30 @@ export default function Home() {
             <Text fontSize={{ base:'30px', md: '38px', lg: '38px' }} mt={{ base: '20px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
           </Box>
           </HStack>
-          
         </SimpleGrid>
       </Box>
+
+      <Tooltip
+        label='View Cart'
+        closeOnClick={false}
+        hasArrow
+      >
+      <Box position='absolute' right={{ base: 6, md: 10, lg: 10}} top={10} zIndex={99}>
+        <IconButton 
+            aria-label='View Cart' 
+            as='a' href='#'
+            borderRadius='180px'
+            color='black'
+            bgColor='pink.100'
+            size='lg'
+            variant='ghost'
+            _hover={{
+              bg: 'pink.200'
+            }}
+            icon={<BsCart2 />}  
+            />
+        </Box>
+        </Tooltip>
     </div>
 
     <EmailForm></EmailForm>
@@ -78,7 +102,7 @@ export default function Home() {
     </div>
 
     <div className='grid-container'>
-      <SimpleGrid py='50px' px='50px' spacing='40px' minChildWidth='300px'>
+      <SimpleGrid py='50px' px='40px' spacing='40px' minChildWidth='300px'>
           
           <Box>
           <Card
