@@ -83,31 +83,35 @@ export default function EmailForm() {
                 <SimpleGrid gap={5} p='5' boxShadow='xl' borderRadius='lg' bg='white' columns={2}>
                     <VStack spacing={5}>
                         <FormControl isRequired>
-                            <FormLabel>Name</FormLabel>
+                            <FormLabel color='#202224'>Name</FormLabel>
 
                             <InputGroup>
                                 <InputLeftElement>
-                                    <BsPerson />
+                                    <BsPerson 
+                                        style={{ color:'grey' }}
+                                    />
                                 </InputLeftElement>
-                                <Input type='text' name='name' placeholder='Your Name' />
+                                <Input color='#202224' type='text' name='name' placeholder='Your Name' />
                             </InputGroup>
                         </FormControl>
 
                         <FormControl isRequired>
-                            <FormLabel>Email</FormLabel>
+                            <FormLabel color='#202224'>Email</FormLabel>
 
                             <InputGroup>
                                 <InputLeftElement>
-                                    <MdOutlineEmail />
+                                    <MdOutlineEmail 
+                                        style={{ color:'grey' }}
+                                    />
                                 </InputLeftElement>
-                                <Input type='text' name='email' placeholder='Your Email' />
+                                <Input color='#202224' type='text' name='email' placeholder='Your Email' />
                             </InputGroup>
                         </FormControl>
                     </VStack>
                     <VStack>
                     <FormControl isRequired>
-                        <FormLabel>Message</FormLabel>
-                            <Textarea resize='none' rows={3} name='message' placeholder='Your Message' />
+                        <FormLabel color='#202224'>Message</FormLabel>
+                            <Textarea color='#202224' resize='none' rows={3} name='message' placeholder='Your Message' />
                         </FormControl>
                         
                         <Button 
