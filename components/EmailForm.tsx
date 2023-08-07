@@ -25,7 +25,7 @@ import { BsPerson, BsInstagram } from 'react-icons/bs'
 import { MdEmail, MdOutlineEmail } from 'react-icons/md'
 
 export default function EmailForm() {
-    const { hasCopied, onCopy } = useClipboard('karmaplushies@example.com')
+    const { hasCopied, onCopy } = useClipboard('zayne.a.pepin@outlook.com')
 
     return (
         <Center>
@@ -80,6 +80,7 @@ export default function EmailForm() {
             </Box>
             </HStack>
             
+            <form action='mailto:zayne.a.pepin@outlook.com'>
                 <SimpleGrid gap={5} p='5' boxShadow='xl' borderRadius='lg' bg='white' columns={2}>
                     <VStack spacing={5}>
                         <FormControl isRequired>
@@ -111,7 +112,9 @@ export default function EmailForm() {
                     <VStack>
                     <FormControl isRequired>
                         <FormLabel color='#202224'>Message</FormLabel>
-                            <Textarea color='#202224' resize='none' rows={3} name='message' placeholder='Your Message' />
+                            <Textarea color='#202224' resize='none' rows={3} placeholder='Your Message'>
+                            
+                            </Textarea>
                         </FormControl>
                         
                         <Button 
@@ -120,11 +123,14 @@ export default function EmailForm() {
                             _hover={{
                                 bg:'pink.200'
                             }}
+                            type='submit'
                         >
                             Send Message
                         </Button>
+                        
                     </VStack>
                 </SimpleGrid>
+                </form>
             
             </Stack>
 
