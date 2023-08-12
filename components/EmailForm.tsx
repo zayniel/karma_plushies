@@ -37,7 +37,7 @@ export default function EmailForm() {
             p='5'
         >
             <Stack spacing={4} align='center'>
-            <Text fontFamily='Palm' fontSize={{ base: '22px', md: '26px', lg: '26px' }} color='#202224'>Get In Touch</Text>
+            <Text fontFamily='Palm' fontSize={{ base: '20px', md: '26px', lg: '26px' }} color='#202224'>Get In Touch</Text>
             <HStack spacing={4}>
             <Tooltip
                 label={hasCopied ? 'Email Copied!' : 'Copy Email'}

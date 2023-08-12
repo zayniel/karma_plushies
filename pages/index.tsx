@@ -61,12 +61,12 @@ export default function Home() {
     <Layout>
     
     <div className='title'>
-      <Box boxShadow='lg' bgColor='whiteAlpha.800' h='130px' w='full'>
+      <Box boxShadow='lg' bgColor='whiteAlpha.800' h={{ sm:'100px', md: '130px', lg: '130px'}} w='full'>
         <SimpleGrid columns={2}>
           <HStack>
-          <Avatar mx={{ sm: '25px', md: '20px', lg: '20px'}} mt={{ base: '30px', md: '6px', lg: '6px' }} size={{ base: 'lg', md: 'xl', lg: 'xl' }} name='Karma' src='./pfp.jpg'></Avatar>
+          <Avatar ml={{ base: '16px', md: '20px', lg: '20px' }} mr={{ base: '9px', md: '20px', lg: '20px' }} mt={{ base: '12px', md: '6px', lg: '6px' }} size={{ base: 'lg', md: 'xl', lg: 'xl' }} name='Karma' src='./pfp.jpg'></Avatar>
           <Box w={{ base:'200px', md: '300px', lg: '400px'}}>
-            <Text fontSize={{ base:'24px', md: '38px', lg: '38px' }} mt={{ base: '30px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
+            <Text fontSize={{ base:'25px', md: '38px', lg: '38px' }} mt={{ base: '12px', md: '6px', lg: '6px' }} variant='title' color='#202224'>Karma Plushies</Text>
           </Box>
           </HStack>
         </SimpleGrid>
@@ -77,7 +77,7 @@ export default function Home() {
         closeOnClick={false}
         hasArrow
       >
-      <Box position='absolute' right={{ base: 6, md: 10, lg: 10}} top={10} zIndex={99}>
+      <Box position='absolute' right={{ base: 6, md: 10, lg: 10}} top={{ base: 7, md: 10, lg: 10 }} zIndex={99}>
         <IconButton 
             aria-label='View Cart' 
             as='a' href='#'
@@ -98,7 +98,7 @@ export default function Home() {
     <EmailForm></EmailForm>
 
     <div className='title'>
-      <Text color='#202224' fontFamily='Palm' fontSize={{ base: '22px', md: '26px', lg: '26px'}} mt='40px'>Featured Plushies</Text>
+      <Text color='#202224' fontFamily='Palm' fontSize={{ base: '20px', md: '26px', lg: '26px'}} mt='40px'>Featured Plushies</Text>
     </div>
 
     <div className='grid-container'>
