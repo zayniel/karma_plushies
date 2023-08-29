@@ -25,7 +25,7 @@ import { BsPerson, BsInstagram } from 'react-icons/bs'
 import { MdEmail, MdOutlineEmail } from 'react-icons/md'
 
 export default function EmailForm() {
-    const { hasCopied, onCopy } = useClipboard('zayne.a.pepin@outlook.com')
+    const { hasCopied, onCopy } = useClipboard('karmaplushies@outlook.com')
 
     return (
         <Center>
@@ -80,7 +80,7 @@ export default function EmailForm() {
             </Box>
             </HStack>
             
-            <form action='mailto:zayne.a.pepin@outlook.com'>
+            <form action='mailto:karmaplushies@outlook.com'>
                 <SimpleGrid gap={5} p='5' boxShadow='xl' borderRadius='lg' bg='white' columns={2}>
                     <VStack spacing={5}>
                         <FormControl isRequired>
